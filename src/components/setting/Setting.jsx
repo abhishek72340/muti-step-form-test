@@ -31,7 +31,7 @@ const Setting = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(
+    alert(
       "Name:",
       `${profileData?.name}, Age: ${profileData?.age}`,
       "Hobby:",
