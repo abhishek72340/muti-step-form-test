@@ -31,14 +31,11 @@ const Setting = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    alert(
-      "Name:",
-      `${profileData?.name}, Age: ${profileData?.age}`,
-      "Hobby:",
-      `${interestData?.hobby}, Sport: ${interestData?.sport}`,
-      "Username:",
-      `${form.username}, Email: ${form.email}`
-    );
+ alert(
+    `Name: ${profileData?.name}, Age: ${profileData?.age}, ` +
+    `Hobby: ${interestData?.hobby}, Sport: ${interestData?.sport}, ` +
+    `Username: ${form.username}, Email: ${form.email}`
+  );
   };
 
   // Check if all required data is available and form is filled
